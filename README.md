@@ -1,6 +1,18 @@
-# FooLib
+# FooTester
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
+
+# Step to reproduce issue
+
+npm install
+npm ling @foo\lib
+ng serve foo-tester 
+
+** Including foo-lib in this mode we cannot reach main_path/child, semms that library route module is not added to application route.
+
+Error in Chrome console is 
+
+core.js:15714 ERROR Error: Uncaught (in promise): Error: Cannot match any routes. URL Segment: 'main_path/child'
 
 ## Development server
 
