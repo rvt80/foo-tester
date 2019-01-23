@@ -14,6 +14,12 @@ Error in Chrome console is
 
 core.js:15714 ERROR Error: Uncaught (in promise): Error: Cannot match any routes. URL Segment: 'main_path/child'
 
+#SOLVED
+Problem semmes to be in angular-cli build procedure with symbolic link.
+Adding
+"preserveSymlinks": true
+in angular.json build option issue is solved
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
