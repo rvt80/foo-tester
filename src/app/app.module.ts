@@ -9,6 +9,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 import { FooLibModule } from '@foo/lib';
+import { BazLibModule } from 'baz-lib';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooLibModule } from '@foo/lib';
   imports: [
     BrowserModule,
     RoutingModule,
-    FooLibModule
+    FooLibModule,
+    BazLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
